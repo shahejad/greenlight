@@ -31,12 +31,15 @@
         </div>
       </div>
     </div>
-    
+    <%
+    =begin %>
     <%= f.label :provider, t("settings.account.provider"), class: "form-label" %>
     <%= f.text_field :provider, class: "form-control", readonly: "" %>
     <br>
     <%= f.label :language, t("settings.account.language"), class: "form-label" %>
     <%= f.select :language, language_options, {}, { class: "form-control custom-select" } %>
+    <%
+    =end %>
 
     <%= f.label :roles, t("settings.account.roles"), class: "form-label mt-5" %>
     <% if current_user.role.get_permission("can_manage_users") %>
