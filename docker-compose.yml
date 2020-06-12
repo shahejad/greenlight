@@ -4,7 +4,7 @@ services:
   app:
     entrypoint: [bin/start]
     # image: bigbluebutton/greenlight:v2
-    image: imaker/meet:v2
+    image: imaker/meet:release-v2
     container_name: greenlight-v2
     env_file: .env
     restart: unless-stopped
