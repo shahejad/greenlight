@@ -35,7 +35,11 @@
     =begin %>
     <%= f.label :provider, t("settings.account.provider"), class: "form-label" %>
     <%= f.text_field :provider, class: "form-control", readonly: "" %>
+    <%
+    =end %>
     <br>
+    <%
+    =begin %>
     <%= f.label :language, t("settings.account.language"), class: "form-label" %>
     <%= f.select :language, language_options, {}, { class: "form-control custom-select" } %>
     <%
